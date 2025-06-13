@@ -10,8 +10,10 @@ This package will only contain generated content from chronopost endpoint https:
 composer require kwaadpepper/chronopost-relay
 ```
 
-    wsdltophp generate:package \
-        --urlorpath="https://ws.chronopost.fr/recherchebt-ws-cxf/PointRelaisServiceWS?wsdl" \
-        --destination="." \
-        --composer-name="kwaadpepper/chronopost-relay" \
-        --force
+```sh
+wsdltophp generate:package --namespace ChronopostRelay \
+    --urlorpath="https://ws.chronopost.fr/recherchebt-ws-cxf/PointRelaisServiceWS?wsdl" \
+    --destination="." \
+    --composer-name="kwaadpepper/chronopost-relay" \
+    --force
+```
